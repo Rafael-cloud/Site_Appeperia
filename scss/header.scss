@@ -5,34 +5,53 @@ header {
     height: 90px;
     width: 100%;
     position: absolute;
-  }
-  
-  header .container {
+
+    @media #{$mq-mobile} {
+        height: auto;
+
+        h1 {
+            max-width: 50%;
+            margin: 0 auto;
+
+            img {
+                max-width: 100%;
+                margin: .5em auto;
+                display: block;
+            }
+        }
+    }
+}
+
+header .container {
     position: relative;
-  }
-  
-  .menu-opcoes {
+
+    @media #{$mq-mobile} {
+        position: static;
+    }
+}
+
+.menu-opcoes {
     position: absolute;
     right: 0;
     top: -.5em;
     font-size: 1.2em;
     font-weight: lighter;
-  }
-  
-  .menu-opcoes ul {
+}
+
+.menu-opcoes ul {
     padding-left: 0;
-  }
-  
-  .menu-opcoes li {
+}
+
+.menu-opcoes li {
     display: inline-block;
     width: 5em;
-  }
-  
-  .menu-opcoes a {
+}
+
+.menu-opcoes a {
     color: white;
     text-decoration: none;
-  }
-  
-  .menu-opcoes a:hover {
+}
+
+.menu-opcoes a:hover {
     text-decoration: underline;
-  }
+}

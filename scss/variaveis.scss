@@ -5,5 +5,8 @@ $cor-padrao: darken(#c24e4b , 20%);
 $cor-auxiliar: lighten(#1e2c35 , 50%); 
 $cor-branca: #fff;
 
+$ponto-de-quebra: 980px;
+$mq-mobile: "(max-with:980px)";
+
 // darken (cor , porcentagem da cor); Para deixar mais escuro
 // complement() para deixar a cor complementar
