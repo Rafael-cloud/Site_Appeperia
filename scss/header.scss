@@ -8,16 +8,16 @@ header {
 
     @media #{$mq-mobile} {
         height: auto;
+    }
 
-        h1 {
-            max-width: 50%;
-            margin: 0 auto;
+    h1 {
+        max-width: 50%;
+        margin: 0 auto;
 
-            img {
-                max-width: 100%;
-                margin: .5em auto;
-                display: block;
-            }
+        img {
+            max-width: 100%;
+            margin: .5em auto;
+            display: block;
         }
     }
 }
@@ -30,28 +30,38 @@ header .container {
     }
 }
 
-.menu-opcoes {
+.menu-principal {
     position: absolute;
     right: 0;
     top: -.5em;
     font-size: 1.2em;
     font-weight: lighter;
-}
 
-.menu-opcoes ul {
-    padding-left: 0;
-}
+    @media #{mq-mobile} {
+        position: static;
+        display: block;
+        text-align: center;
+    }
 
-.menu-opcoes li {
-    display: inline-block;
-    width: 5em;
-}
+    ul {
+        padding-left: 0;
+    }
 
-.menu-opcoes a {
-    color: white;
-    text-decoration: none;
-}
+    li {
+        display: inline-block;
+        width: 5em;
 
-.menu-opcoes a:hover {
-    text-decoration: underline;
+        @media #{mq-mobile} {
+            margin: .4em;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
